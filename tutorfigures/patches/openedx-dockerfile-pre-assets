@@ -1,0 +1,2 @@
+# Install Figures app
+RUN pip install https://github.com/appsembler/figures/archive/0.3.0-prerelease.zip

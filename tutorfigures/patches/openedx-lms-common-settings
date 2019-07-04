@@ -1,0 +1,11 @@
+# Figures plugin settings
+import figures.settings.lms_production
+ENV_TOKENS["FIGURES"] = {
+    "ENABLE_DAILY_METRICS_IMPORT": True,
+}
+figures.settings.lms_production.update_webpack_loader(
+    WEBPACK_LOADER, ENV_TOKENS["FIGURES"]
+)
+figures.settings.lms_production.update_celerybeat_schedule(
+    CELERYBEAT_SCHEDULE, ENV_TOKENS["FIGURES"]
+)
