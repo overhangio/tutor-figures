@@ -7,7 +7,7 @@ Figures plugin for `Tutor <https://docs.tutor.overhang.io>`_
     :alt: E-ducation
     :target: https://www.e-ducation.cn/
 
-This plugin was developed with support from `E-ducation <https://www.e-ducation.cn/>`_. Thanks!
+This plugin was developed and open sourced to the community thanks to the generous support of `E-ducation <https://www.e-ducation.cn/>`_. Thank you!
 
 Installation
 ------------

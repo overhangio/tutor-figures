@@ -14,7 +14,7 @@ setup(
     url="https://docs.tutor.overhang.io/",
     project_urls={
         "Documentation": "https://docs.tutor.overhang.io/",
-        "Code": "https://github.com/overhangio/tutor/tree/master/plugins/minio",
+        "Code": "https://github.com/overhangio/tutor-figures",
         "Issue tracker": "https://github.com/overhangio/tutor/issues",
         "Community": "https://discuss.overhang.io",
     },
@@ -25,6 +25,7 @@ setup(
     long_description=readme,
     packages=find_packages(exclude=["tests*"]),
     include_package_data=True,
+    install_requires=["tutor-openedx"],
     python_requires=">=3.5",
     entry_points={"tutor.plugin.v0": ["figures = tutorfigures.plugin"]},
     classifiers=[
