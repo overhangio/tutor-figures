@@ -15,7 +15,7 @@ setup(
     project_urls={
         "Documentation": "https://docs.tutor.overhang.io/",
         "Code": "https://github.com/overhangio/tutor-figures",
-        "Issue tracker": "https://github.com/overhangio/tutor/issues",
+        "Issue tracker": "https://github.com/overhangio/tutor-figures/issues",
         "Community": "https://discuss.overhang.io",
     },
     license="AGPLv3",
