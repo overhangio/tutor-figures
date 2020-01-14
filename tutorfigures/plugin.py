@@ -1,7 +1,10 @@
 from glob import glob
 import os
 
+from .__about__ import __version__
+
 HERE = os.path.abspath(os.path.dirname(__file__))
+
 
 def patches():
     all_patches = {}

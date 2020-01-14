@@ -7,10 +7,16 @@ here = os.path.abspath(os.path.dirname(__file__))
 with io.open(os.path.join(here, "README.rst"), "rt", encoding="utf8") as f:
     readme = f.read()
 
+about = {}
+with io.open(
+    os.path.join(here, "tutorfigures", "__about__.py"), "rt", encoding="utf-8"
+) as f:
+    exec(f.read(), about)
+
 
 setup(
     name="tutor-figures",
-    version="0.1.0",
+    version=about["__version__"],
     url="https://docs.tutor.overhang.io/",
     project_urls={
         "Documentation": "https://docs.tutor.overhang.io/",
