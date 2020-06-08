@@ -31,7 +31,7 @@ setup(
     long_description=readme,
     packages=find_packages(exclude=["tests*"]),
     include_package_data=True,
-    install_requires=["tutor-openedx"],
+    install_requires=["tutor-openedx<10.0.0"],
     python_requires=">=3.5",
     entry_points={"tutor.plugin.v0": ["figures = tutorfigures.plugin"]},
     classifiers=[
