@@ -2,6 +2,8 @@
 import figures.settings.lms_production
 ENV_TOKENS["FIGURES"] = {
     "ENABLE_DAILY_METRICS_IMPORT": True,
+    "ENABLE_DAILY_MAU_IMPORT": True,
+    "ENABLE_FIGURES_MONTHLY_METRICS": True,
 }
 figures.settings.lms_production.update_webpack_loader(
     WEBPACK_LOADER, ENV_TOKENS["FIGURES"]
