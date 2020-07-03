@@ -1,10 +1,9 @@
-deploy:
-  script:
-    - pip3 install -U setuptools twine==2.0.0
-    - python3 setup.py sdist
-    - twine upload --skip-existing dist/tutor-figures*.tar.gz
-  only:
-    refs:
-      - master
-  tags:
-    - private
+variables:
+  TUTOR_PLUGIN: figures
+  TUTOR_PYPI_PACKAGE: tutor-figures
+  TUTOR_PYPI_PRIVATE_PACKAGE: tutor-figures
+  OPENEDX_RELEASE: ironwood
+
+include:
+  - project: 'community/tutor-ci'
+    file: 'plugin-gitlab-ci.yml'
