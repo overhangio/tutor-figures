@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: lms-worker-beat
-          image: {{ DOCKER_REGISTRY }}{{ DOCKER_IMAGE_OPENEDX }}
+          image: {{ DOCKER_IMAGE_OPENEDX }}
           args: ["./manage.py", "lms", "celery", "beat", "--loglevel=info"]
           env:
           - name: SERVICE_VARIANT

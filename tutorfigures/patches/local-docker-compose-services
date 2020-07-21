@@ -1,7 +1,7 @@
 {% if ACTIVATE_LMS %}
 # Celery beat worker for periodic tasks
 lms-worker-beat:
-  image: {{ DOCKER_REGISTRY }}{{ DOCKER_IMAGE_OPENEDX }}
+  image: {{ DOCKER_IMAGE_OPENEDX }}
   environment:
     SERVICE_VARIANT: lms
     SETTINGS: ${EDX_PLATFORM_SETTINGS:-tutor.production}
