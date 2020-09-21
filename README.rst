@@ -15,22 +15,32 @@ Installation
 This plugin requires tutor>=3.5.0. Also, you should have installed tutor from source, and not from a pre-compiled binary.
 
 ::
-  
+
     pip install tutor-figures
 
 Then, to enable this plugin, run::
-  
+
     tutor plugins enable figures
 
 You will have to re-generate the environment and rebuild the "openedx" docker image::
-  
+
     tutor config save
     tutor images build openedx
 
 You will then have to run LMS migrations. To do so, run::
-  
+
     tutor local init
 
 This last step is unnecessary if you run instead ``tutor local quickstart``.
 
 You should then be able to access the Figures dashboard at ``http://<your lms host>/figures``. On a local instance, you should be able to access it at http://localhost/figures.
+
+Installing a fork of Figures
+----------------------------
+
+By default, Figures is installed from `Appsembler's repository <https://github.com/appsembler/figures.git>`__. To change this, you can define the repository and version at build time::
+
+    tutor images build \
+        --build-arg FIGURES_REPOSITORY=git+https://github.com/myusername/figures.git \
+        --build-arg FIGURES_VERSION=alpha \
+        openedx

@@ -1,3 +1,4 @@
 # Install Figures app
+ARG FIGURES_REPOSITORY=git+https://github.com/appsembler/figures.git
 ARG FIGURES_VERSION=build-0.3.11
-RUN pip install -e git+https://github.com/appsembler/figures.git@$FIGURES_VERSION#egg=figures
+RUN pip install -e $FIGURES_REPOSITORY@$FIGURES_VERSION#egg=figures
