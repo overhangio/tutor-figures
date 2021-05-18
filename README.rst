@@ -1,11 +1,9 @@
 Figures plugin for `Tutor <https://docs.tutor.overhang.io>`_
 ============================================================
 
-`Figures <https://github.com/appsembler/figures>`_ is a data retrieval and reporting app for Open edX; this is a plugin for Tutor that allows quick and easy integration in an Open edX platform. It works both locally and on a Kubernetes-based platform.
+⚠️ THIS PLUGIN IS IN MAINTENANCE MODE. Because the underlying Figures application lags behind the latest Open edX release, we are unable to provide continued support for this plugin. If you manage to get Figures to work on Koa (Tutor v11) and later, please open a pull request on this repository to share your findings.
 
-.. image:: https://overhang.io/static/marketing/img/clients/e-ducation.jpg
-    :alt: E-ducation
-    :target: https://www.e-ducation.cn/
+`Figures <https://github.com/appsembler/figures>`_ is a data retrieval and reporting app for Open edX; this is a plugin for Tutor that allows quick and easy integration in an Open edX platform. It works both locally and on a Kubernetes-based platform.
 
 This plugin was developed and open sourced to the community thanks to the generous support of `E-ducation <https://www.e-ducation.cn/>`_. Thank you!
 
