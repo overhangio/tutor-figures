@@ -1,0 +1,13 @@
+figures:
+  image: {{ FIGURES_DEVSITE_DOCKER_IMAGE }}
+  environment:
+    ALLOWED_HOSTS: "*"
+    ENABLE_DEVSITE_CELERY: false
+    FIGURES_IS_MULTISITE: false
+    LOG_LEVEL: 10
+    OPENEDX_RELEASE: JUNIPER
+    SEED_DAYS_BACK: 10
+    SEED_NUM_LEARNERS_PER_COURSE: 10
+  command: ./manage.py runserver 0.0.0.0:8000
+  ports:
+    - "9000:8000"
