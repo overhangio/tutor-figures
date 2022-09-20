@@ -29,7 +29,7 @@ You will then have to run LMS migrations. To do so, run::
 
     tutor local init
 
-This last step is unnecessary if you run instead ``tutor local quickstart``.
+This last step is unnecessary if you run instead ``tutor local launch``.
 
 You should then be able to access the Figures dashboard at ``http://<your lms host>/figures``. On a local instance, you should be able to access it at http://localhost/figures.
 
